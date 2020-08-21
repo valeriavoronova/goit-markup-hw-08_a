@@ -1,0 +1,211 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+   
+    background-color: $main-header-color;
+    padding: 40px;
+    
+}
+
+.modal-form-title{
+    
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $bold-title-color;
+    margin-bottom: 30px;
+}
+
+.modal-form-input-wrapper{
+    position: relative;
+    margin-bottom: 28px;
+    svg{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        
+        transform: translateY(-50%);
+    }
+    
+}
+
+
+.modal-form-input{
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+}    
+.modal-form-message{
+    margin-bottom: 20px;
+    height: 120px;
+    resize: none;
+    padding: 16px 12px;
+
+    &::placeholder{
+        padding-bottom: 10px;
+    }
+
+    &:focus::placeholder{
+        color: $accent-color;   
+    }    
+ }
+    
+.modal-form-option-label{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $p-text-color;
+    margin-bottom: 30px;
+    padding-left: 14px;
+}
+
+
+.modal-form-option-span a{
+    color: $accent-color;
+}
+
+.modal-form-checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+.modal-form-custom-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: solid 1px $black-colour;
+    border-radius: 2px;
+    margin-right: 7px;
+    
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox svg{
+    background-color: $accent-color;
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox{
+    border: solid 1px $accent-color;
+    border-radius: 2px;
+}
+
+.modal-form-message,
+.modal-form-input{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    border: solid 1px rgba(33, 33, 33, 0.2);
+    color: $black-colour;
+    border-radius: 4px;
+
+    &:not(:placeholder-shown),
+    &:focus{
+        outline: none;
+        border-color: $accent-color;    
+    }    
+}
+
+.modal-form-label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-left: 42px;
+    transform: translateY(-50%);
+    font-size: 14px;    
+    letter-spacing: 0.01em;   
+    color: $p-text-color;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-label,
+.modal-form-input:not(:placeholder-shown) + .modal-form-label{
+    transform: translateY(-40px);
+    color: $accent-color;
+    padding-left: 18px;
+}
+
+.modal-form-input:focus ~ svg,
+.modal-form-input:not(:placeholder-shown) ~ svg{
+    fill: $accent-color;
+}
+
+.modal-form-button{
+
+    min-width: 200px;
+    min-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-header-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+    border: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: transparent;
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{ 
+        fill: $accent-color;
+    }
+}
+
+ 
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

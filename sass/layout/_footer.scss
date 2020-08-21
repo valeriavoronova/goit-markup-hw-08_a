@@ -1,0 +1,161 @@
+.footer-container{
+    
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.subscribe-form{
+    display: flex;
+}
+
+.subscribe{
+    padding-top: 12px; 
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+
+.left-side{
+    
+    margin-right: 69px;
+}
+.right-side{
+    padding-top: 12px;
+    margin-right: 94px;
+}
+.bot-logo{
+    font-family: $logo-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $main-header-color;
+    text-decoration: none;
+    
+}
+
+.footer-adress{
+    margin-top: 20px;
+}
+
+.address{
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-header-color;
+    text-decoration: none;
+    
+}
+.features-cont{
+    padding-top: 94px;
+}
+
+.mail-phone{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    color: $mail-phone-bot-color;
+}
+
+b{
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-header-color;
+    
+}
+
+.footer-social-icons-list{
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-social-icon-item:not(:last-child){
+    margin-right: 10px;
+}
+
+
+
+.social-link-bot{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover{
+        background-color: $accent-color;
+    }
+}
+
+footer{
+    background-color: #2F303A;
+}
+.adress-list-item{
+    margin-top: 9px;
+}
+
+/*SUBSCRIBE*/
+
+.subscr{
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-header-color;
+    margin-bottom: 20px;
+}
+
+.sub-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    padding-left: 16px;
+}
+
+.footer-button{
+    padding-top: 48px;
+   
+}
+
+
+
+.foot-button{
+    display: flex; 
+    align-items: center;
+    padding: 10px 28px;
+    min-width: 200px;
+    height: 50px;    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;  
+    letter-spacing: 0.06em;
+    color: $main-header-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+    border: 0ex;    
+}
+
+.foot-button{
+     span{
+        margin-right: 10px;
+     }
+}
