@@ -595,18 +595,158 @@ a,
   text-decoration: none;
 }
 
-.menu-wrapper {
-  display: none;
-}
-
 header {
-  background-color: blanchedalmond;
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-blue {
+  color: #2196F3;
+}
+
+.main-logo {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-logo {
+    font-size: 24px;
+    line-height: 1.666;
+  }
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-close {
+  display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: blanchedalmond;
+  width: 100%;
+  padding: 60px 140px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation {
+  margin-bottom: 60px;
+}
+
+.header-nav-links {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.666;
+  letter-spacing: 0.02em;
+}
+
+.nav-item-active,
+.nav-item-passive {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.666;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-link {
+  display: inline-flex;
+}
+
+.header-nav-link:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.header-nav-link-active {
+  position: relative;
+}
+
+.nav-active::after {
+  position: absolute;
+  left: 0;
+  bottom: 20;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-passive {
+  color: #212121;
+  text-decoration: none;
+}
+
+.nav-item-active {
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.list-adress-link {
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-adress-link .adress-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.666;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  list-style: none;
+  fill: #757575;
+}
+
+.list-adress-link .adress-item svg {
+  margin-right: 10px;
+}
+
+.list-adress-link .adress-item.adress-item:hover, .list-adress-link .adress-item.adress-item:focus {
+  fill: #2196F3;
+  color: #2196F3;
+}
+
+.adress-link {
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-link:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.adress-link:hover, .adress-link:focus {
+  fill: #2196F3;
+  color: #2196F3;
 }
 
 h1 {

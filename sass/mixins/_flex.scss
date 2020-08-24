@@ -1,3 +1,6 @@
-@mixin flex-container($AI,$JC){
+@mixin flex-container($jc,$ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
     
 }
