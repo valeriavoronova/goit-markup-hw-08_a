@@ -1,11 +1,12 @@
 
-
+@import "./utils/normalize";
 @import "./utils/variables";
 @import "./base/base";
 @import "./components/container";
 @import "./components/section";
 @import "./components/modal";
 @import "./components/list";
+@import "./placeholders/transitions";
 
 @import "./layout/header";
 @import "./layout/hero";
