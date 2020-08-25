@@ -595,13 +595,20 @@ a,
   text-decoration: none;
 }
 
+.menu-wrapper {
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 header {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
+  position: relative;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -634,6 +641,14 @@ header {
   height: 40px;
 }
 
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-burger {
+  display: none;
+}
+
 .icon-close {
   display: none;
 }
@@ -642,10 +657,18 @@ header {
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: blanchedalmond;
+  background-color: #FFFFFF;
   width: 100%;
-  padding: 60px 140px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid #ececec;
+  transform: translateY(-130%);
+}
+
+.menu-wrapper.is-open {
+  display: block;
+  transform: translateY(0);
 }
 
 .navigation {
@@ -653,8 +676,8 @@ header {
 }
 
 .header-nav-links {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 39.5%;
+  padding-right: 39.5%;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -701,19 +724,17 @@ header {
 
 .nav-item-passive {
   color: #212121;
-  text-decoration: none;
 }
 
 .nav-item-active {
-  text-decoration: none;
   color: #2196F3;
 }
 
-.list-adress-link {
+.adress-link {
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-adress-link .adress-item {
+.adress-link .adress-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,11 +748,11 @@ header {
   fill: #757575;
 }
 
-.list-adress-link .adress-item svg {
+.adress-link .adress-item svg {
   margin-right: 10px;
 }
 
-.list-adress-link .adress-item.adress-item:hover, .list-adress-link .adress-item.adress-item:focus {
+.adress-link .adress-item.adress-item:hover, .adress-link .adress-item.adress-item:focus {
   fill: #2196F3;
   color: #2196F3;
 }

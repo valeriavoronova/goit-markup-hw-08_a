@@ -4,11 +4,15 @@ header{
     
     padding-top: 10px;
     padding-bottom: 10px;
-
-}
-.header-container{
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
     
+}
+
+.header-container{
+    position: relative;
+    z-index: 100;
     @include flex-container(space-between, center)
+    
     
 }
 
@@ -40,6 +44,14 @@ header{
     border: none;
     width: 40px;
     height: 40px;
+    &.is-open{
+        .icon-close{
+            display: block;
+        }
+        .icon-burger{
+            display: none;
+        }
+    }
     
 }
 
@@ -47,37 +59,58 @@ header{
     display: none;
 }
 
-.menu-wrapper{
+.menu-wrapper {
     position: absolute;
     left: 0;
     top: 100%;
-    // background-color: $main-header-color;
-    background-color: blanchedalmond;
+    background-color: $main-header-color;
     width: 100%;
-    padding: 60px 140px;
+    padding-top: 60px;
+    padding-bottom: 60px; //
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-top: 1px solid rgba(236, 236, 236, 1);
+    transform: translateY(-130%);
+    @extend %animation;
+    
+
+    &.is-open {
+         display: block;
+         transform: translateY(0);
+         
+    }
+    
 }
-    .navigation{
+
+// @media screen and (max-width: 479px){
+//     .menu-wrapper {
+//         padding: 60px 29%;
+//     }
+// }
+
+.navigation{
         margin-bottom: 60px;
         
         
     }
-    .header-nav-links{
-        padding-left: 50px;
-        padding-right: 50px;
+.header-nav-links{
+        padding-left: 39.5%; //
+        padding-right: 39.5%;
         text-align: center;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.666;
-
-
-
         letter-spacing: 0.02em;
-
-
     }
-    .nav-item-active,
-    .nav-item-passive{      
+
+// @media screen and (max-width: 479px){
+//     .header-nav-links {
+//         padding-left: 10%; //50px
+//         padding-right: 10%;
+//     }
+// }
+
+.nav-item-active,
+.nav-item-passive{      
         font-weight: 500;
         font-size: 18px;
         line-height: 1.666;
@@ -87,14 +120,14 @@ header{
 
     
     
-    .header-nav-link{
+.header-nav-link{
         display: inline-flex;
         &:not(:last-child){
             margin-bottom: 40px;
         }
     }
 
-    .header-nav-link-active{
+.header-nav-link-active{
             position: relative;
         }
         
@@ -123,12 +156,12 @@ header{
 
 .nav-item-passive{
     color: $bold-title-color;
-    text-decoration: none;
+    
 
 }
 
 .nav-item-active{
-    text-decoration: none;
+    
     color: $accent-color;
 }
 
@@ -143,7 +176,7 @@ header{
 //     }
 // }
 
-.list-adress-link{
+.adress-link{
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     .adress-item{
         @include flex-container(center,center);
