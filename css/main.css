@@ -597,6 +597,7 @@ a,
 
 header {
   position: relative;
+  z-index: 1;
   font-weight: 500;
   border-bottom: 1px solid #ececec;
 }
@@ -776,7 +777,7 @@ header {
   .menu-btn {
     display: none;
   }
-  .container {
+  .head-container {
     display: flex;
     justify-content: space-between;
   }
@@ -814,6 +815,7 @@ header {
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
+    z-index: 2;
   }
   .adress-link {
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -825,6 +827,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  header {
+    border-bottom: none;
+  }
   .envelope {
     width: 16px;
     height: 11px;
@@ -833,10 +838,8 @@ header {
     width: 10px;
     height: 15px;
   }
-  .header .container {
-    display: flex;
+  .header .head-container {
     align-items: center;
-    justify-content: space-between;
   }
   .header-nav-link:not(:last-child) {
     margin-right: 50px;
@@ -889,15 +892,17 @@ h1 {
   margin-top: 0px;
 }
 
-.main-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/Headerimg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (min-width: 320px) {
+  .main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/mobile/mob_hero/header_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .order-button {
@@ -907,7 +912,7 @@ h1 {
   margin-left: auto;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   display: block;
   text-align: center;
   letter-spacing: 0.06em;
@@ -921,6 +926,47 @@ h1 {
 
 .order-button:hover, .order-button:focus {
   color: #FFFFFF;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/mobile/mob_hero/header_2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/tablet/tab_hero/head.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/tablet/tab_hero/2xhead.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 26px;
+    line-height: 1.615;
+  }
+  .main-section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/main/header/headerimg.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/main/header/2xhead.jpg);
+  }
 }
 
 .visually-hidden {

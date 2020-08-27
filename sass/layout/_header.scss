@@ -1,6 +1,7 @@
 
 header{
     position: relative;
+    z-index: 1;
     font-weight: 500;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
    
@@ -218,7 +219,7 @@ header{
         display: none;
     }
 
-    .container{
+    .head-container{
         display: flex;
         justify-content: space-between;
         // align-items: center;
@@ -262,6 +263,7 @@ header{
                 height: 4px;    
                 background: $accent-color;
                 border-radius: 2px;
+                z-index: 2;
             }
         }
 
@@ -276,6 +278,10 @@ header{
 }
 
 @media screen and (min-width: 1200px){
+    header{
+        border-bottom: none;
+    }
+
     .envelope{
         width: 16px;
         height: 11px;
@@ -287,10 +293,8 @@ header{
     }
     
     .header{
-        .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .head-container{
+            align-items: center;       
         }
     }
 
