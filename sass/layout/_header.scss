@@ -2,8 +2,6 @@
 header{
     position: relative;
     font-weight: 500;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
    
 }
@@ -30,6 +28,48 @@ header{
     
     
 }
+
+.nav-item-active{
+    
+    color: $accent-color;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;  
+}
+
+.nav-item-passive{
+    color: $bold-title-color;
+    
+
+}
+
+.adress-link{
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    .adress-item{
+        @include flex-container(center,center);
+        line-height: 1.666;
+        
+        letter-spacing: 0.02em;
+        color: $p-text-color;
+        text-decoration: none;
+        list-style: none; 
+        fill: $p-text-color;  
+    
+            svg{
+                margin-right: 10px;
+            }
+
+            &.adress-item:hover,
+            &.adress-item:focus{
+                fill: $accent-color;
+                color: $accent-color;
+            }
+        }  
+}
+
+
 
 @media screen and (max-width: 1199px){
     .main-logo{
@@ -58,8 +98,14 @@ header{
         line-height: 1.14;
     }
 
+    .adress-link{
+        &:not(:last-child){
+            margin-bottom: 10px;
+            }      
+    }
 
-}
+
+} // max 1199
 
  @media screen and (max-width: 767px){
     .main-logo{
@@ -145,6 +191,7 @@ header{
 
     .header-nav-link-active{
         position: relative;
+
         .nav-active::after{
             position: absolute;
             left: 0;
@@ -156,57 +203,15 @@ header{
             background: $accent-color;
             border-radius: 2px;
         }
-        }
+    }
     
     
             
-}
-
-.navigation{
-    display: flex;
-    align-items: center;  
-}
-
-.nav-item-passive{
-    color: $bold-title-color;
-    
-
-}
-
-.nav-item-active{
-    
-    color: $accent-color;
-}
-
-.adress-link{
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    .adress-item{
-        @include flex-container(center,center);
-        line-height: 1.666;
-        
-        letter-spacing: 0.02em;
-        color: $p-text-color;
-        text-decoration: none;
-        list-style: none; 
-        fill: $p-text-color;  
-    
-            svg{
-                margin-right: 10px;
-            }
-
-            &.adress-item:hover,
-            &.adress-item:focus{
-                fill: $accent-color;
-                color: $accent-color;
-            }
-        }  
-}
+} //max 767
 
 
 
-@media screen and (min-width: 480px){
-    
-}
+
 
 @media screen and (min-width: 768px){
     .menu-btn{
@@ -236,6 +241,8 @@ header{
     .header-nav-links{
         display: flex;
         .header-nav-link{
+            padding-top: 32px;
+            padding-bottom: 32px;
             &:not(:first-child){
                 margin-left: 50px;
             }
@@ -258,11 +265,14 @@ header{
             }
         }
 
-    
-    .header-nav-link{
-        padding-top: 32px;
-        padding-bottom: 32px;
+    .adress-link{
+        transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        .adress-item{
+            display: flex;
+            justify-content: left;
+        }
         
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -275,8 +285,78 @@ header{
         width: 10px;
         height: 15px;
     }
+    
+    .header{
+        .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    }
 
-}}
+    .header-nav-link{
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+
+    }
+        
+    .header-nav-links{    
+        margin-left: 85px;
+        padding-left: 0px;
+    }
+
+
+    .nav-item-active,
+    .nav-item-passive{      
+        
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;    
+    }
+
+    .nav-item-passive{
+        
+        transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+       
+         &:hover,
+         &:focus{
+                color: $accent-color;
+            }
+
+    }
+
+  
+    .list-adress-link{
+        display: flex;
+
+        .adress-item{
+            align-items: center;         
+            font-size: 14px;
+            line-height: 1.42;
+            letter-spacing: 0.02em;
+            color: $p-text-color;
+            fill: $p-text-color;  
+
+                &.adress-item:hover,
+                &.adress-item:focus{
+                    fill: $accent-color;
+                    color: $accent-color;
+                }
+        }  
+    }
+
+    .adress-link{
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+
+    }
+
+
+}
+
 
 
 // .header{
