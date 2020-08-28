@@ -1029,12 +1029,6 @@ h1 {
   .features-item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
   }
-  .features-item div {
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f5f4fa;
-  }
   .features-title {
     text-align: left;
   }
@@ -1042,8 +1036,8 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .features-item {
+    margin-bottom: 0px;
     width: 270px;
-    margin-bottom: 0;
   }
   .features-item:not(:last-child) {
     margin-right: 30px;
