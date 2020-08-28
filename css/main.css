@@ -1002,9 +1002,6 @@ h1 {
   .features-item {
     width: 450px;
   }
-  .features-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
   .features-item div {
     height: 120px;
     background-repeat: no-repeat;
@@ -1014,8 +1011,15 @@ h1 {
   .features-title {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .features-cont {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1036,8 +1040,8 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .features-item {
-    margin-bottom: 0px;
     width: 270px;
+    margin-bottom: 0px;
   }
   .features-item:not(:last-child) {
     margin-right: 30px;
@@ -1074,6 +1078,18 @@ h1 {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
 }
 
 .what-we-do-title {

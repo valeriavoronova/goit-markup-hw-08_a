@@ -1,3 +1,16 @@
+@media screen and (max-width: 1199px){
+    .what-we-do{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .what-we-do{
+        display: block;
+    }
+}
+
+
 .what-we-do-title{
     
     margin-bottom: 50px;
