@@ -1,7 +1,18 @@
 
-
-.section-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+@media screen and (min-width: 320px){
+    .section-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+    }
 }
+
+@media screen and (min-width: 1200px){
+    .section-container{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
+    }
+}
+
+

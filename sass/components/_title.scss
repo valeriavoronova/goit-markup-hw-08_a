@@ -1,0 +1,23 @@
+
+
+
+@media screen and (min-width: 320px){
+    .what-we-do-title{
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.79;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $bold-title-color;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .what-we-do-title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.67;
+        
+    }
+}
