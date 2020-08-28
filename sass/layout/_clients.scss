@@ -55,7 +55,9 @@
 }    
 
 @media screen and (min-width: 480px){
-   
+    .clients-list{
+        justify-content: center;
+    }
     .clients-list-item{
         a{
             width: 210px;
