@@ -984,23 +984,73 @@ h1 {
   overflow: hidden;
 }
 
-.flex-list {
-  display: flex;
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-top: 30px;
 }
 
-.features-item {
-  width: 270px;
+@media screen and (min-width: 320px) {
+  .flex-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-item {
+    width: 450px;
+  }
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features-item div {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f5f4fa;
+  }
+  .features-title {
+    text-align: center;
+  }
+  .features-cont {
+    padding-top: 60px;
+  }
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features-item {
+    width: 354px;
+  }
+  .features-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .features-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .features-item div {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f5f4fa;
+  }
+  .features-title {
+    text-align: left;
+  }
 }
 
-.features-item div {
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #f5f4fa;
+@media screen and (min-width: 1200px) {
+  .features-item {
+    width: 270px;
+    margin-bottom: 0;
+  }
+  .features-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-cont {
+    padding-top: 94px;
+  }
 }
 
 .features-img-container1 {
@@ -1021,16 +1071,6 @@ h1 {
 
 .features-img {
   margin: 25px 100px;
-}
-
-.features-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-top: 30px;
 }
 
 .features-text {
@@ -1243,10 +1283,6 @@ h1 {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-decoration: none;
-}
-
-.features-cont {
-  padding-top: 94px;
 }
 
 .mail-phone {

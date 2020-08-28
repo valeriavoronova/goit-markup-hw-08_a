@@ -10,26 +10,100 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
-.flex-list{
-    display: flex;
-   
-}
-.features-item{
-    width: 270px;
-    &:not(:last-child){
-        margin-right: 30px;
-    }
-    div{
-    //    width: 270px;
-        height: 120px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #f5f4fa;
-    }
-    
+
+  .features-title{       
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $bold-title-color;
+    margin-top: 30px;
 }
 
+  @media screen and (min-width: 320px){  
+  
+    .flex-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features-item{
+        width: 450px;    
+        div{
+        
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #f5f4fa;
+        }
+        
+    }
+    .features-title{  
+        text-align: center;
+    }
+
+    .features-cont{
+        padding-top: 60px;
+    }
+
+  }
+
+  @media screen and (max-width: 767px){
+    .features-item{
+        &:not(:last-child){
+            margin-bottom: 30px;
+        } 
+   }
+
+
+  @media screen and (min-width: 768px){ 
+    
+    .features-item{
+        width: 354px;
+        &:not(:nth-child(2n)){
+            margin-right: 30px;
+        }
+        // &:nth-last-child(-n + 2){
+        //     margin-bottom: 0px;
+        // }
+        
+        div{
+        
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #f5f4fa;
+        }
+        
+    }
+    .features-title{  
+        text-align: left;
+    }
+  }
+
+@media screen and (max-width: 1199px){ 
+    .features-item{
+        &:nth-last-child(-n + 2){
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){ 
+    .features-item{
+        
+        width: 270px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        
+        
+    }
+    .features-cont{
+        padding-top: 94px;
+    }
+}
 .features-img-container1{
     background-image: url(../images/main/features/antenna1.svg);    
 }
@@ -50,15 +124,7 @@
     margin: 25px 100px;    
 }
 
-.features-title{       
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $bold-title-color;
-    margin-top: 30px;
-}
+
 
 .features-text{       
     font-weight: normal;
