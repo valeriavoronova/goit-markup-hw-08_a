@@ -73,49 +73,56 @@ h1{
     .main-section{
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/headerimg.jpg);
     }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-width: 1200px){
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
     .main-section{
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/2xhead.jpg);
     }
 } 
 
-@media screen and (min-width: 768px){
+}
+
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx){
+//     .main-section{
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/2xhead.jpg);
+//     }
+// } 
+
+@media screen and (max-width: 1199px){
     .main-section{
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/tab_hero/head.jpg);
     }
-}
-
-
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-width: 768px){
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
     .main-section{
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/tab_hero/2xhead.jpg);
     }
-}    
+}  
+}
 
 
-@media screen and (min-width: 320px){
+  
+
+
+@media screen and (max-width: 767px){
     .main-section{    
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/mob_hero/header_1.jpg);
     }
-}    
-
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-width: 320px){
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
     .main-section{
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/mob_hero/header_2.jpg);
     }
   }
+
+}    
+
+
 
 
 
