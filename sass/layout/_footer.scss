@@ -9,33 +9,12 @@
     display: flex;
 }
 
-.subscribe{
-    padding-top: 12px; 
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-}
-
-
-.left-side{
-    
-    margin-right: 69px;
-}
-.right-side{
-    padding-top: 12px;
-    margin-right: 94px;
-}
-.bot-logo{
-    font-family: $logo-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $main-header-color;
-    text-decoration: none;
-    
-}
+// .subscribe{
+//     padding-top: 12px; 
+//     width: 358px;
+//     height: 50px;
+//     margin-right: 12px;
+// }
 
 .footer-adress{
     margin-top: 20px;
@@ -69,16 +48,7 @@
     color: $mail-phone-bot-color;
 }
 
-b{
-    
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-header-color;
-    
-}
+
 
 .footer-social-icons-list{
     display: flex;
@@ -121,7 +91,6 @@ footer{
 }
 
 .sub-input{
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -131,10 +100,7 @@ footer{
     padding-left: 16px;
 }
 
-.footer-button{
-    padding-top: 48px;
-   
-}
+
 
 
 
@@ -158,4 +124,115 @@ footer{
      span{
         margin-right: 10px;
      }
+}
+
+@media screen and (min-width: 320px){
+    .bot-logo{
+        font-family: $logo-font;   
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.667;
+        letter-spacing: 0.03em;
+        color: $main-header-color;
+        text-decoration: none;
+        
+    }
+
+}
+
+@media screen and (max-width: 479px){
+    .sub-input{
+        width: 358px;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .sub-input{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .footer-container{
+        >div{
+            width: 480px;
+            margin-bottom: 60px;
+        }
+    }
+    
+    .footer-social-icons-list{
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+
+@media screen and (max-width: 1199px){
+    .footer-container{
+        flex-wrap: wrap;
+    }
+
+    .footer-container{
+        >div{
+            text-align: center;
+        }
+    
+    }
+
+    .subscribe{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .bot-logo{
+        
+        font-size: 26px;
+        line-height: 1.19;    
+    }
+    
+    .left-side{
+    
+        margin-right: 69px;
+    }
+
+    .right-side{
+        padding-top: 12px;
+        margin-right: 94px;
+    }
+
+    .subscribe{
+        padding-top: 12px; 
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+    }
+
+    .footer-button{
+        padding-top: 48px;
+       
+    }
+
+    .sub-input{
+        width: 358px;
+    }
+    
+    
 }

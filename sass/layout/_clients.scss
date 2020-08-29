@@ -47,9 +47,9 @@
         justify-content: center;
     }
     .clients-list-item{
-        a{
-            width: 170px;
-        }
+        //a{
+            width: calc((100% - 30px) / 2);
+        //}
         
     }
 }    
@@ -61,6 +61,7 @@
     .clients-list-item{
         a{
             width: 210px;
+            
         }
 
     }
