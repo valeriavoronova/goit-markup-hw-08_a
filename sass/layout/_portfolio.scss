@@ -170,10 +170,22 @@
         margin-bottom: 30px;
     }
 
-    .gallery-list-item{
-     
+    .gallery-list-item{ 
         width: 354px;
+    }
+
+    .gallery-list-container{
+        margin-right: 30px;
+        margin-bottom: 30px;
    
+        &:nth-child(2n),
+        &:last-child{
+           margin-right: 0px;
+       }
+   
+       &:nth-last-child(-n + 1){
+           margin-bottom: 0px;
+       }
     }
 }
 
@@ -185,9 +197,7 @@
     }
 
     .gallery-list-container{
-        margin-right: 30px;
-        margin-bottom: 30px;
-   
+       
         &:nth-child(3n){
            margin-right: 0px;
        }
