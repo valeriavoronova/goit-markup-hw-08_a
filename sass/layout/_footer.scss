@@ -175,7 +175,10 @@ footer{
         padding-top: 5px;
     }
 
-    
+    .subscribe{
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
 
     
     
@@ -211,10 +214,7 @@ footer{
         margin-top: 60px;
     }
     
-    .subscribe{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+    
 
     
 
@@ -243,6 +243,8 @@ footer{
         width: 358px;
         height: 50px;
         margin-right: 12px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .footer-button{
@@ -253,6 +255,7 @@ footer{
     .sub-input{
         width: 358px;
     }
+
     
     
 }

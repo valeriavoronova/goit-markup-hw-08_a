@@ -151,34 +151,35 @@
                             <li class="team-member">
                                 
                                 <picture>
+
+                                    <source
+                                        srcset="
+                                        ./images/mobile/mob-team/team-1.jpg    1x,
+                                        ./images/mobile/mob-team/2xt1.jpg 2x
+                                        "
+                                        media="(max-width: 767px)"
+                                    />
                                         <source
                                             srcset="
-                                            ./images/main/team/t1x1.jpg 1x,
+                                            ./images/main/team/t1x1.jpg    1x,
                                             ./images/main/team/t1x2.jpg 2x
                                             "
-                                            type="image/jpg"
-                                            media="(min-width:1200px)"
+                                            media="(min-width: 1200px)"
                                         
                                         />
                                     
                                         <source
                                             srcset="
-                                            ./images/tablet/tab-team/t1x1.jpg 1x,
+                                            ./images/tablet/tab-team/t1x1.jpg     1x,
                                             ./images/tablet/tab-team/t2x2.jpg 2x
                                             "
-                                            type="image/jpg"
-                                            media="(max-width:1199px)"
+                                            media="(min-width: 768px)"
                                         />
 
 
-                                        <source
-                                            srcset="
-                                            ./images/mobile/mob-team/team-1.jpg 1x,
-                                            ./images/mobile/mob-team/2xt1.jpg 2x
-                                            "
-                                            type="image/jpg"
-                                            media="(max-width:767px)"
-                                        />      
+                                      
+                                        
+                                        <img src="./images/main/team/t1x1.jpg" alt="Дизайнер">
                                        
                                         <!-- <img
                                             srcset="
@@ -194,7 +195,7 @@
                                             width= 270
                                         /> -->
                                 </picture>
-                                <img src="./images/mobile/mob_team/team-1.jpg" alt="Дизайнер" width= 270>
+                               
                                 <h3 class="spec-name">Николай Кучеренко</h3>
                                 <p class="prof"><span lang="en">Product Designer</span></p>
                                 <ul class= "list flex-list-social-icons">

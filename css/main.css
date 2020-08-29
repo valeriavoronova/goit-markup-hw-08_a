@@ -996,20 +996,9 @@ h1 {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1199px) {
-  h1 {
-    font-size: 26px;
-    line-height: 1.615;
-  }
-  .main-section {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .main-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/headerimg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/head.jpg);
   }
 }
 
@@ -1020,7 +1009,13 @@ h1 {
 }
 
 @media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 26px;
+    line-height: 1.615;
+  }
   .main-section {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/tab_hero/head.jpg);
   }
 }
@@ -1520,6 +1515,10 @@ footer {
   .right-side {
     padding-top: 5px;
   }
+  .subscribe {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1541,10 +1540,6 @@ footer {
     justify-content: center;
     margin-top: 60px;
   }
-  .subscribe {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1564,6 +1559,8 @@ footer {
     width: 358px;
     height: 50px;
     margin-right: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .footer-button {
     padding-top: 48px;

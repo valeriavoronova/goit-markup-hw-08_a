@@ -49,29 +49,9 @@ h1{
 
 
 
-
-
-
-
-
-@media screen and (max-width: 1199px){
-    h1{
-        font-size: 26px;
-        line-height: 1.615;
-    }
-
-    .main-section{
-        padding-top: 118px;
-        padding-bottom: 118px;
-
-
-    }
-}
-
-
 @media screen and (min-width: 1200px){
     .main-section{
-        background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/headerimg.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header/head.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -92,7 +72,15 @@ h1{
 // } 
 
 @media screen and (max-width: 1199px){
+    h1{
+        font-size: 26px;
+        line-height: 1.615;
+    }
+
     .main-section{
+        padding-top: 118px;
+        padding-bottom: 118px;
+
         background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/tab_hero/head.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
