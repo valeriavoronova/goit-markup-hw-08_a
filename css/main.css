@@ -1585,7 +1585,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 63px 24px;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.56;
@@ -1656,6 +1655,9 @@ footer {
   .gallery-list-item:focus .overlay, .gallery-list-item:hover .overlay {
     top: 0;
   }
+  .overlay {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1685,6 +1687,9 @@ footer {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+  .overlay {
+    padding: 49px 24px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1708,6 +1713,9 @@ footer {
   }
   .gallery-list-item {
     width: 370px;
+  }
+  .overlay {
+    padding: 63px 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */

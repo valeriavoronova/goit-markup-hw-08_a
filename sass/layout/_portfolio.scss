@@ -60,7 +60,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 63px 24px;
+     
      font-weight: normal;
      font-size: 18px;
      line-height: 1.56;
@@ -144,6 +144,10 @@
        }
     }
 
+    .overlay{
+        padding: 77px 24px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -181,6 +185,10 @@
         margin-right: 30px;
         margin-bottom: 30px;
    
+    }
+
+    .overlay{
+        padding: 49px 24px;
     }
 }
 
@@ -220,6 +228,10 @@
      
         width: 370px;
    
+    }
+
+    .overlay{
+        padding: 63px 24px;
     }
     
     
