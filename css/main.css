@@ -1520,13 +1520,6 @@ footer {
   .right-side {
     padding-top: 5px;
   }
-  .subscribe-form {
-    margin-top: 60px;
-  }
-  .subscribe {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1546,6 +1539,11 @@ footer {
   .subscribe-form {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 60px;
+  }
+  .subscribe {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
