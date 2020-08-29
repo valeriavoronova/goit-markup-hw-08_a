@@ -160,15 +160,29 @@ footer{
         }
     }
     
-    .footer-social-icons-list{
-        justify-content: center;
-    }
-
+    
     
 
 }
 
 @media screen and (min-width: 768px){
+
+    .left-side{
+        padding-left: 61px;
+        margin-right: 165px;
+    }
+    .right-side{
+        padding-top: 5px;
+    }
+
+    .subscribe-form{
+        margin-top: 60px;
+    }
+
+     .subscribe{
+         padding-left: 50px;
+         padding-right: 50px;
+     }
     
 }
 
@@ -185,6 +199,11 @@ footer{
         }
     
     }
+
+    .footer-social-icons-list{
+        justify-content: center;
+    }
+
 
     .subscribe{
         text-align: center;
