@@ -91,7 +91,10 @@
      font-size: 18px;
      line-height: 2; 
      letter-spacing: 0.06em; 
-     color: $bold-title-color;    
+     color: $bold-title-color;  
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;  
  }
  
  .port-skill{
@@ -178,6 +181,12 @@
         margin-right: 30px;
         margin-bottom: 30px;
    
+    }
+}
+
+@media screen and (max-width: 1199px){ 
+    .gallery-list-container{
+        
         &:nth-child(2n),
         &:last-child{
            margin-right: 0px;

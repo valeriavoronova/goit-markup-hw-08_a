@@ -1613,6 +1613,9 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .port-skill {
@@ -1682,6 +1685,9 @@ footer {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+}
+
+@media screen and (max-width: 1199px) {
   .gallery-list-container:nth-child(2n), .gallery-list-container:last-child {
     margin-right: 0px;
   }
